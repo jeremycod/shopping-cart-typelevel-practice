@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/zoran/learning/ShoppintCartFP/target/scala-2.13/shoppingcartfp_2.13-0.1-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/AppResources.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/AppResources.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/MainIO.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/MainIO.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/utils/Configurable.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/utils/Configurable.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/utils/Configuration.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/utils/Configuration.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/http/BrandRoutes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/http/BrandRoutes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/http/HttpApi.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/http/HttpApi.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/domain/BrandsPayloads.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/domain/BrandsPayloads.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/domain/BrandsAlgebra.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/domain/BrandsAlgebra.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/domain/BrandsService.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/domain/BrandsService.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/utils/extensions/Skunkx.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/utils/extensions/Skunkx.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/http/utils/json.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/http/utils/json.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/mzinnovations/fp/infrastructure/postgres/BrandsRepository.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/zoran/learning/ShoppintCartFP/src/main/scala/com/mzinnovations/fp/infrastructure/postgres/BrandsRepository.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

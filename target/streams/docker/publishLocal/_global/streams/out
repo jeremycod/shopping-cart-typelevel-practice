@@ -1,0 +1,71 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t shoppingcartfp:0.1 -t shoppingcartfp:latest .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/zoran/learning/ShoppintCartFP/target/docker/stage[0m
+[0m[[0m[31merror[0m] [0m[0m#1 [internal] load build definition from Dockerfile[0m
+[0m[[0m[31merror[0m] [0m[0m#1 sha256:9b0ebcbfc3c9c3921cdb1fae55213b190e0ca5d5dbfb592093e8e9f20fec686d[0m
+[0m[[0m[31merror[0m] [0m[0m#1 transferring dockerfile: 1.08kB 0.0s done[0m
+[0m[[0m[31merror[0m] [0m[0m#1 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#2 [internal] load .dockerignore[0m
+[0m[[0m[31merror[0m] [0m[0m#2 sha256:8757b4505756ab6fa73199222712377da1773a4105b62628804c79c1670b3883[0m
+[0m[[0m[31merror[0m] [0m[0m#2 transferring context: 2B done[0m
+[0m[[0m[31merror[0m] [0m[0m#2 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:8u201-jre-alpine3.9[0m
+[0m[[0m[31merror[0m] [0m[0m#3 sha256:6149131282d51dbf37bf55516ef3447f3dcdba8f9ca92382d890579a5c49910f[0m
+[0m[[0m[31merror[0m] [0m[0m#3 ...[0m
+[0m[[0m[31merror[0m] [0m[0m#4 [auth] library/openjdk:pull token for registry-1.docker.io[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:0eca33ce3531c2be37a4026a80f0955755447ef32e7c6cd716b7eaf13c5628b1[0m
+[0m[[0m[31merror[0m] [0m[0m#4 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:8u201-jre-alpine3.9[0m
+[0m[[0m[31merror[0m] [0m[0m#3 sha256:6149131282d51dbf37bf55516ef3447f3dcdba8f9ca92382d890579a5c49910f[0m
+[0m[[0m[31merror[0m] [0m[0m#3 DONE 1.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#5 [stage0 1/8] FROM docker.io/library/openjdk:8u201-jre-alpine3.9@sha256:dd7ff2cf3bfd017e9de5160db09c0b92304f4d116872cc27d22333036ce93d18[0m
+[0m[[0m[31merror[0m] [0m[0m#5 sha256:e5b46553a4235eb6425baeca9b252a05bb6c678cb02be4f1acdc6f2387f23d46[0m
+[0m[[0m[31merror[0m] [0m[0m#5 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#9 [internal] load build context[0m
+[0m[[0m[31merror[0m] [0m[0m#9 sha256:e9f64a31797d8f5abf087fb5407544d43c9fd55d171cd70c455eee57c672a92f[0m
+[0m[[0m[31merror[0m] [0m[0m#9 transferring context: 38.06MB 0.6s done[0m
+[0m[[0m[31merror[0m] [0m[0m#9 DONE 0.6s[0m
+[0m[[0m[31merror[0m] [0m[0m#8 [stage0 2/8] WORKDIR /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#8 sha256:1760848bc8ceb61ebb6a1a49fa422a0dd9c232cfdf631a12d6425f3b78b5cb01[0m
+[0m[[0m[31merror[0m] [0m[0m#8 CACHED[0m
+[0m[[0m[31merror[0m] [0m[0m#10 [stage0 3/8] COPY 2/opt /2/opt[0m
+[0m[[0m[31merror[0m] [0m[0m#10 sha256:2c8523590f4484e871963d8ceb40551b1b71bfc70160e52bcf9c6cc3f2b06b4a[0m
+[0m[[0m[31merror[0m] [0m[0m#10 DONE 0.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#11 [stage0 4/8] COPY 4/opt /4/opt[0m
+[0m[[0m[31merror[0m] [0m[0m#11 sha256:dc019d64fbbef61035bf1a075beb7a551e32c8f1d192ef2a41557e56bc103026[0m
+[0m[[0m[31merror[0m] [0m[0m#11 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#12 [stage0 5/8] RUN ["chmod", "-R", "u=rX,g=rX", "/2/opt/docker"][0m
+[0m[[0m[31merror[0m] [0m[0m#12 sha256:b955be90cbd9c7991ff5b32be14255322c9d8eecd5011ac483ac3d0998aec81f[0m
+[0m[[0m[31merror[0m] [0m[0m#12 DONE 0.6s[0m
+[0m[[0m[31merror[0m] [0m[0m#13 [stage0 6/8] RUN ["chmod", "-R", "u=rX,g=rX", "/4/opt/docker"][0m
+[0m[[0m[31merror[0m] [0m[0m#13 sha256:ef4239ca4791aed9d1a2727851ab39b8def40c3bba5ba67e4d4a3c2839508d80[0m
+[0m[[0m[31merror[0m] [0m[0m#13 DONE 0.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#14 [stage0 7/8] RUN ["chmod", "u+x,g+x", "/4/opt/docker/bin/shoppingcartfp"][0m
+[0m[[0m[31merror[0m] [0m[0m#14 sha256:e34bbd9a5a373dc558ddd6a216df4b78832e2c14c4a5867c6bc22d46b89a421d[0m
+[0m[[0m[31merror[0m] [0m[0m#14 DONE 0.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#15 [stage0 8/8] RUN ["chmod", "u+x,g+x", "/4/opt/docker/bin/main-io"][0m
+[0m[[0m[31merror[0m] [0m[0m#15 sha256:01967aee161197fcfd4732fa8a8117eadb3f9e61c8b54dd467cb5376119a6ccf[0m
+[0m[[0m[31merror[0m] [0m[0m#15 DONE 0.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#6 [mainstage 2/5] RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m
+[0m[[0m[31merror[0m] [0m[0m#6 sha256:3d09790ba5d8680a0edbc5151571e4fe8adf3862533913e42579f5a061427fa3[0m
+[0m[[0m[31merror[0m] [0m[0m#6 CACHED[0m
+[0m[[0m[31merror[0m] [0m[0m#7 [mainstage 3/5] WORKDIR /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#7 sha256:fd1e3edde23fdfdae38a087f51c0a9d80f44b0a248af86f5142a8355d2e5b4a5[0m
+[0m[[0m[31merror[0m] [0m[0m#7 CACHED[0m
+[0m[[0m[31merror[0m] [0m[0m#16 [mainstage 4/5] COPY --from=stage0 --chown=demiourgos728:root /2/opt/docker /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#16 sha256:5e6c1a7f88e96f9398e67757f68dd7ed13d9e3e8c1d22a1fccbdf714279bf8eb[0m
+[0m[[0m[31merror[0m] [0m[0m#16 DONE 0.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#17 [mainstage 5/5] COPY --from=stage0 --chown=demiourgos728:root /4/opt/docker /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#17 sha256:f3245243303de850dab6b9e3740432940dce1c6bc490d61996f72e09b8f3ff0f[0m
+[0m[[0m[31merror[0m] [0m[0m#17 DONE 0.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#18 exporting to image[0m
+[0m[[0m[31merror[0m] [0m[0m#18 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00[0m
+[0m[[0m[31merror[0m] [0m[0m#18 exporting layers[0m
+[0m[[0m[31merror[0m] [0m[0m#18 exporting layers 0.3s done[0m
+[0m[[0m[31merror[0m] [0m[0m#18 writing image sha256:d607fb591a9c2998a75e3bacdccde346e94db0239276fb60096e376c4b196e36 done[0m
+[0m[[0m[31merror[0m] [0m[0m#18 naming to docker.io/library/shoppingcartfp:0.1 done[0m
+[0m[[0m[31merror[0m] [0m[0m#18 naming to docker.io/library/shoppingcartfp:latest done[0m
+[0m[[0m[31merror[0m] [0m[0m#18 DONE 0.3s[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate image(s) (labeled "snp-multi-stage-id=148f4c66-57b4-4877-b5b1-61adc01fc791") [0m
+[0m[[0m[0minfo[0m] [0m[0mTotal reclaimed space: 0B[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image shoppingcartfp with tags [0.1, latest][0m
