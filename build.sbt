@@ -7,6 +7,9 @@ import Dependencies._
 name := "ShoppingCartFP"
 ThisBuild / version := "0.0.1"
 
+// This exclussion is to supress incorrect warning of inferred Any type with ZIO 2 schedule https://github.com/zio/zio/issues/6645
+val excludeInferAny = { options: Seq[String] => options.filterNot(Set("-Xlint:infer-any")) }
+
 lazy val IntegrationTest = config("it") extend(Test)
 
 lazy val root = (project in file("."))
@@ -17,6 +20,7 @@ lazy val root = (project in file("."))
     name := "ShoppingCartFPinScala",
     scalaVersion := "2.13.8",
     Compile / mainClass := Some("bunyod.fp.MainIO"),
+
     Global / onChangedBuildSource := ReloadOnSourceChanges,
     //    scalacOptions ++= CompilerOptions.cOptions,
     //    scalafmtOnCompile := true,
@@ -32,12 +36,14 @@ lazy val root = (project in file("."))
       "-Ywarn-numeric-widen",
       "-Xfatal-warnings",
       "-deprecation",
-      "-Xlint:-unused,_",
+    //  "-Xlint:-unused,_",
       "-deprecation",
       "-Ymacro-annotations",
       "-Xmaxerrs",
       "200",
     ),
+    Compile / scalacOptions ~= excludeInferAny,
+    Test / scalacOptions ~= excludeInferAny,
     dockerBaseImage := "openjdk:8u201-jre-alpine3.9",
     dockerExposedPorts ++= Seq(8080),
     makeBatScripts := Seq(),

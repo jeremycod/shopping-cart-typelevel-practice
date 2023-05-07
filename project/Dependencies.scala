@@ -20,10 +20,13 @@ object Dependencies {
     val redis4cats = "1.2.0"
     val ciris = "2.3.1"
     val pureConfig = "0.17.1"
+    val DerevoVersion = "0.13.0"
 
     val scalaCheck = "1.15.4"
     val scalaTest = "3.2.11"
     val scalaTestPlus = "3.2.2.0"
+    val ZioVersion = "2.0.0"
+    val ZioLoggingVersion = "2.1.12"
   }
 
   object Libraries {
@@ -57,6 +60,13 @@ object Dependencies {
 
     val http4sJwtAuth = "dev.profunktor" %% "http4s-jwt-auth" % Versions.http4sJwtAuth
 
+    val derevoCore = "tf.tofu" %% s"derevo-core" % Versions.DerevoVersion
+
+    val derevoCats = "tf.tofu" %% s"derevo-cats" % Versions.DerevoVersion
+
+    val derevoCirce = "tf.tofu" %% s"derevo-circe-magnolia" % Versions.DerevoVersion
+
+
     val refinedCore = "eu.timepit" %% "refined" % Versions.refined
     val refinedCats = "eu.timepit" %% "refined-cats" % Versions.refined
     val refinedPureconfig = "eu.timepit" %% "refined-pureconfig" % Versions.refined
@@ -70,6 +80,19 @@ object Dependencies {
     val scalaCheck = "org.scalacheck" %% "scalacheck" % Versions.scalaCheck % "it,test"
     val scalaTest = "org.scalatest" %% "scalatest" % Versions.scalaTest % "it,test"
     val scalaTestPlus = "org.scalatestplus" %% "scalacheck-1-14" % Versions.scalaTestPlus % "it,test"
+    val zio = "dev.zio" %% "zio" % Versions.ZioVersion
+
+    val zioLogging = "dev.zio" %% "zio-logging-slf4j2" % Versions.ZioLoggingVersion
+
+    val zioStreams = "dev.zio" %% "zio-streams" % Versions.ZioVersion
+
+    val zioMacros = "dev.zio" %% "zio-macros" % Versions.ZioVersion
+
+
+    val zioJson = "dev.zio" %% "zio-json" % "0.3.0-RC8"
+
+    val zioInterop = "dev.zio" %% "zio-interop-cats" % "23.0.0.0"
+
 
   }
 
@@ -114,7 +137,16 @@ object Dependencies {
     Libraries.refinedCats,
     Libraries.scalaCheck,
     Libraries.scalaTest,
-    Libraries.scalaTestPlus
+    Libraries.scalaTestPlus,
+    Libraries.zio,
+    Libraries.zioInterop,
+    Libraries.zioJson,
+    Libraries.zioLogging,
+    Libraries.zioMacros,
+    Libraries.zioStreams,
+    Libraries.derevoCats,
+    Libraries.derevoCirce,
+    Libraries.derevoCore
   )
 
 }

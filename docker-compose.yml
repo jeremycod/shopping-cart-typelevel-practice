@@ -1,18 +1,19 @@
-PostgreSQL:
-  restart: always
-  image: postgres:12.0-alpine
-  ports:
-    - "5433:5432"
-  environment:
-    - DEBUG=false
-    - POSTGRES_DB=store
-  volumes:
-    - ./src/it/resources/tables.sql:/docker-entrypoint-initdb.d/init.sql
+services:
+  PostgresSQL:
+    restart: always
+    image: postgres:12.0-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      - DEBUG=false
+      - POSTGRES_DB=store
+    volumes:
+      - ./src/it/resources/tables.sql:/docker-entrypoint-initdb.d/init.sql
 
-Redis:
-  restart: always
-  image: redis:5.0.0
-  ports:
-    - "6379:6379"
-  environment:
-    - DEBUG=false
+  Redis:
+    restart: always
+    image: redis:5.0.0
+    ports:
+      - "6379:6379"
+    environment:
+      - DEBUG=false
